@@ -38,7 +38,7 @@ class Edistribucion():
     __appInfo = None
     __context = None
     
-    def __init__(self, user, password, debug_level=logging.INFO):
+    def __init__(self, user, password, debug_level=logging.ERROR):
         self.__session = requests.Session()
         self.__credentials['user'] = user
         self.__credentials['password'] = password
